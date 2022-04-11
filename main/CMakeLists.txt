@@ -1,18 +1,10 @@
 ﻿cmake_minimum_required (VERSION 3.10)
 
-add_executable (main "main.cpp" "music.hpp")
+add_executable (main "main.cpp" )
 
-target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-audio.lib )
 target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-graphics.lib )
-target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-network.lib )
 target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-system.lib )
 target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-window.lib )
-
-#target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-audio-d.lib)
-#target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-graphics-d.lib)
-#target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-network-d.lib)
-#target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-system-d.lib)
-#target_link_libraries(main PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml-window-d.lib)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
