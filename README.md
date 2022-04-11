@@ -1,3 +1,1 @@
-# SFML-Balls
-
-Balls.
+Balls
